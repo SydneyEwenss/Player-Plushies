@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "player-plushies",
+	"version": "${version}",
+	"name": "Player Plushies",
+	"description": "Custom player plushies",
+	"authors": [
+		"Sydders"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/player-plushies/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.sydders.playerplushies.PlayerPlushies"
+		],
+		"fabric-datagen": [
+			"com.sydders.playerplushies.PlayerPlushiesDataGenerator"
+		],
+		"client": [
+			"com.sydders.playerplushies.PlayerPlushiesClient"
+		]
+	},
+	"mixins": [
+		"player-plushies.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
