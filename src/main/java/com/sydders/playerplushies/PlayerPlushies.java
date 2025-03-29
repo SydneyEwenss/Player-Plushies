@@ -1,5 +1,6 @@
 package com.sydders.playerplushies;
 
+import com.sydders.playerplushies.block.ModBlocks;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +12,6 @@ public class PlayerPlushies implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModBlocks.registerModBlocks();
 	}
 }

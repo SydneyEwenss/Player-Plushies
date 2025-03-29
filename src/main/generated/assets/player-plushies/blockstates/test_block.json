@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "player-plushies:block/test_block"
+    }
+  }
+}
